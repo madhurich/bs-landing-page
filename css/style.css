@@ -1,0 +1,97 @@
+html, body{
+	background: url('../img/img/bg.jpg') center center no-repeat;
+	height: 100%;
+	background-size: cover;
+}
+
+@media(max-width:768px){
+	#logo img{
+		width: 50%;
+	}
+	#counter .countdown{
+		font-size: 1.4em !important;
+	}
+	#intro p{
+		font-size: 1.2em !important;
+	}
+}
+/* when orientation is changed */
+@media(min-width: 375px)
+	and (max-width: 732px){
+		#logo img{
+			width: 20%;
+		}
+	}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  	#logo img{
+  		width: 40%;
+  	}
+
+}	
+
+
+#intro p{
+	color: white;
+	text-align: center;
+	font-family: 'Shrikhand', cursive;
+	font-size: 1.8em;
+}
+
+#icons{
+	text-align: center;
+}
+
+#icons .fa{
+	color: white;
+	margin: 5px 15px;
+	position: relative;
+	bottom: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+#icons .fa-twitter-square:hover{
+	color: #6cadde;
+	bottom: 5px;
+}
+
+#icons .fa-facebook-square:hover{
+	color: #3b5998;
+	bottom: 5px;
+}
+
+#icons .fa-google-plus-square:hover{
+	color: #ea4335;
+	bottom: 5px;
+}
+
+#icons .fa-instagram:hover{
+	color: #517fa6;
+	bottom: 5px;
+}
+
+#counter .countdown{
+	text-align: center;
+	color: white;
+	font-family: 'Amatica SC', cursive;
+	font-size: 3em;
+}
+
+#signup{
+	text-align: center;
+	color: white;
+}
+
+#signup .btn-signup{
+	background-color: rgba(161, 186, 226, 0.5);
+	transition:all 0.3s ease-in-out;
+}
+
+#signup .btn-signup:hover{
+	background-color: rgba(37, 165, 82, 1);
+}
